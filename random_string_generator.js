@@ -9,8 +9,6 @@ chars.alphanum = chars.alpha.concat(chars.num);
 chars.special = '! @ # $ % ^ & * ( ) - _ = + ` ~ [ ] { } \\ | ; : \' " < > . , / ?'.split(' ');
 chars.all = chars.alphanum.concat(chars.special);
 
-console.log(chars.alphalc);
-
 w.generateRandomString = function(type, max, fixed){
 	type = type in chars ? type : 'all';
 	
