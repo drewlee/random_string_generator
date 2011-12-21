@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JavaScript Random String Generator</title>
+
+<style>
+body{font:12px/16px Arial, sans-serif; color:#333;}
+footer{display:block; font-size:10px; margin:40px 0 10px;}
+footer a{text-decoration:underline;}
+</style>
+
+<script src="random_string_generator.js"></script>
+<script>
+document.createElement('footer');
+
+window.onload = function(){
+	document.getElementById('str_numeric').innerHTML  = generateRandomString('num', 30);
+	document.getElementById('str_alphalc').innerHTML  = generateRandomString('alphalc', 30);
+	document.getElementById('str_alphauc').innerHTML  = generateRandomString('alphauc', 30);
+	document.getElementById('str_alpha').innerHTML    = generateRandomString('alpha', 30);
+	document.getElementById('str_alphanum').innerHTML =	generateRandomString('alphanum', 30);
+	document.getElementById('str_special').innerHTML  = generateRandomString('special', 30);
+	document.getElementById('str_all').innerHTML      = generateRandomString('all', 30);
+};
+</script>
+</head>
+<body>
+<h1>Random String Generator</h1>
+<p style="margin-bottom:24px;">The following strings are generated using a max limit of 30 characters, but also randomly vary in length.</p>
+
+<section class="block">
+	<h2>Numeric String</h2>
+	<p id="str_numeric"></p>
+</section>
+
+<section class="block">
+	<h2>Alphabetic String - Lowercase</h2>
+	<p id="str_alphalc"></p>
+</section>
+
+<section class="block">
+	<h2>Alphabetic String - Uppercase</h2>
+	<p id="str_alphauc"></p>
+</section>
+
+<section class="block">
+	<h2>Alphabetic String</h2>
+	<p id="str_alpha"></p>
+</section>
+
+<section class="block">
+	<h2>Alphanumeric String</h2>
+	<p id="str_alphanum"></p>
+</section>
+
+<section class="block">
+	<h2>Special Characters</h2>
+	<p id="str_special"></p>
+</section>
+
+<section class="block">
+	<h2>All Characters</h2>
+	<p id="str_all"></p>
+</section>
+
+<footer>&copy; 2011 Andrew A. Lee | Contact: <a href="mailto:andrew@andrewleeart.com">andrew@andrewleeart.com</a></footer>
+</body>
+</html>
