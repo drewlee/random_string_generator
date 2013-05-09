@@ -1,4 +1,3 @@
-#Info
 An exercise in creating a random string generator helper function, which also provides some general all around usefulness.
 
 ##Usage
@@ -21,7 +20,7 @@ An exercise in creating a random string generator helper function, which also pr
 
 
 ##Arguments
-* **type** *String* - Character type
+- **type** *String* - Character type
   - **num** - numeric (0 - 9)
   - **alphalc** - alphabetic lowercase (a - z)
   - **alphauc** - alphabetic uppercase (A - Z)
@@ -29,5 +28,5 @@ An exercise in creating a random string generator helper function, which also pr
   - **alphanum** - alphanumeric (a - z, A - Z, 0 - 9)
   - **special** - special chars (!, @, #, etc.)
   - **all** (default) - outputs all alphanumeric and special characters
-* **max** *Number* - Maximum generated string length (default of 10)
-* **fixed** *Boolean* - Always generate to a fixed length? (default of false)
+- **max** *Number* - Max length of generated string (default of 10)
+- **fixed** *Boolean* - Generate to a fixed length? (default of false)
