@@ -1,6 +1,7 @@
+#Info
 An exercise in creating a random string generator helper function, which also provides some general all around usefulness.
 
-#Usage
+##Usage
     /* 
      * random alphanumeric string (including special characters) of random length 
      * default max length of 10 chars
@@ -19,7 +20,7 @@ An exercise in creating a random string generator helper function, which also pr
     var random = generateRandomString('num', 10, true);
 
 
-#Arguments
+##Arguments
 * **type** *String* - Character type
   - **num** - numeric (0 - 9)
   - **alphalc** - alphabetic lowercase (a - z)
