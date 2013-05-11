@@ -2,10 +2,10 @@ An exercise in creating a random string generator helper function which provides
 
 ##Usage
 ```javascript
- /* 
-  * Random alphanumeric string (including special characters) of random length 
-  * default max length of 10 chars
-  */
+/* 
+ * Random alphanumeric string (including special characters) of random length 
+ * default max length of 10 chars
+ */
 var random = generateRandomString();
 
 /*
