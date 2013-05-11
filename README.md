@@ -9,13 +9,13 @@ An exercise in creating a random string generator helper function which provides
 var random = generateRandomString();
 
 /*
- * random alphanumeric string of random length 
- * possible max length of 30 chars
+ * Random alphanumeric string of random length 
+ * max limit of 30 chars
  */
 var random = generateRandomString('alphanum', 30);
 
 /*
- * random numeric string with a fixed character length of 10 chars
+ * Random numeric string with a fixed character length of 10 chars
  */
 var random = generateRandomString('num', 10, true);
 ```
