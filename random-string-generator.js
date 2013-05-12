@@ -1,4 +1,4 @@
-(function(global){
+(function(namespace){
 'use strict';
 
 var chars = {};
@@ -11,7 +11,7 @@ chars.alphanum = chars.alpha + chars.num;
 chars.special  = '!@#$%^&*()-_=+`~[]{}\\|;:\'"<>.,/?';
 chars.all      = chars.alphanum + chars.special;
 
-global.generateRandomString = function genrs(type, max, fixed){
+namespace.generateRandomString = function genrs(type, max, fixed){
   type = type in genrs._chars ? type : 'all';
   
   var str = '',
@@ -25,5 +25,5 @@ global.generateRandomString = function genrs(type, max, fixed){
   return str;
 };
 
-global.generateRandomString._chars = chars;
+namespace.generateRandomString._chars = chars;
 })(window);
