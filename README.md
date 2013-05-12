@@ -1,23 +1,24 @@
 An exercise in creating a random string generator helper function which provides some general all around usefulness.
 
 ##Usage
-    /* 
-     * random alphanumeric string (including special characters) of random length 
-     * default max length of 10 chars
-     */
-    var random = generateRandomString();
+```javascript
+/* 
+ * Random alphanumeric string (including special characters) of random length 
+ * default max length of 10 chars
+ */
+var random = generateRandomString();
 
-    /*
-     * random alphanumeric string of random length 
-     * possible max length of 30 chars
-     */
-    var random = generateRandomString('alphanum', 30);
+/*
+ * Random alphanumeric string of random length 
+ * max limit of 30 chars
+ */
+var random = generateRandomString('alphanum', 30);
 
-    /*
-     * random numeric string with a fixed character length of 10 chars
-     */
-    var random = generateRandomString('num', 10, true);
-
+/*
+ * Random numeric string with a fixed character length of 10 chars
+ */
+var random = generateRandomString('num', 10, true);
+```
 
 ##Arguments
 - **type** *String* - Character type
