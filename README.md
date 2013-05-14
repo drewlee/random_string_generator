@@ -29,5 +29,7 @@ var random = generateRandomString('num', 10, true);
   - **alphanum** - alphanumeric (a - z, A - Z, 0 - 9)
   - **special** - special chars (!, @, #, etc.)
   - **all** (default) - outputs all alphanumeric and special characters
+
 - **max** *Number* - Max length of generated string (default of 10)
+
 - **fixed** *Boolean* - Generate to a fixed length? (default of false)
