@@ -6,18 +6,18 @@ An exercise in creating a random string generator helper function which provides
  * Random alphanumeric string (including special characters) of random length 
  * default max length of 10 chars
  */
-var random = generateRandomString();
+var random = randomize();
 
 /*
  * Random alphanumeric string of random length 
  * max limit of 30 chars
  */
-var random = generateRandomString('alphanum', 30);
+var random = randomize('alphanum', 30);
 
 /*
  * Random numeric string with a fixed character length of 10 chars
  */
-var random = generateRandomString('num', 10, true);
+var random = randomize('num', 10, true);
 ```
 
 ##Arguments

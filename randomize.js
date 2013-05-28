@@ -12,7 +12,7 @@ chars.alphanum = chars.alpha + chars.num;
 chars.special  = '!@#$%^&*()-_=+`~[]{}\\|;:\'"<>.,/?';
 chars.all      = chars.alphanum + chars.special;
 
-scope.generateRandomString = function genrs(type, max, fixed){
+var randomize = function genrs(type, max, fixed){
   type = type in genrs._chars ? type : 'all';
   
   var str = '',
@@ -26,5 +26,15 @@ scope.generateRandomString = function genrs(type, max, fixed){
   return str;
 };
 
-scope.generateRandomString._chars = chars;
+randomize._chars = chars;
+
+if (typeof define === 'function' && define.amd){
+  define(function(){
+    return randomize;
+  });
+} else if (typeof module == 'object' && typeof module.exports === 'object'){
+  module.exports = randomize;
+} else {
+  scope.randomize = randomize;
+}
 }).call(this);
