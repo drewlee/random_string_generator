@@ -32,7 +32,7 @@ if (typeof define === 'function' && define.amd){
   define(function(){
     return randomize;
   });
-} else if (typeof module == 'object' && typeof module.exports === 'object'){
+} else if (typeof module === 'object' && typeof module.exports === 'object'){
   module.exports = randomize;
 } else {
   scope.randomize = randomize;

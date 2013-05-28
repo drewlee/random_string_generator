@@ -1,4 +1,4 @@
-An exercise in creating a random string generator helper function which provides some general all around usefulness.
+An exercise in creating a random string generator helper function which provides some general all around usefulness. Now works with Node.
 
 ##Usage
 ```javascript
