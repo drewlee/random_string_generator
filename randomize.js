@@ -1,8 +1,7 @@
 (function(){
 'use strict';
 
-var scope = this,
-    chars = {};
+var chars = {};
 
 chars.num      = '0123456789';
 chars.alphalc  = 'abcdefghijklmnopqrstuvwxyz';
@@ -29,12 +28,10 @@ var randomize = function genrs(type, max, fixed){
 randomize._chars = chars;
 
 if (typeof define === 'function' && define.amd){
-  define(function(){
-    return randomize;
-  });
+  define(function(){ return randomize; });
 } else if (typeof module === 'object' && typeof module.exports === 'object'){
   module.exports = randomize;
 } else {
-  scope.randomize = randomize;
+  this.randomize = randomize;
 }
 }).call(this);
